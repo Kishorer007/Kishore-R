@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+body {
+    border-radius: 50px;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+.illustration img{
+        width: 780px;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        height: 720px;
+    }
+}
+
+.Login {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+
+.login-box {
+        width: 300px;
+    text-align: center;
+    h2 {
+        font-size: 24px;
+        float: left;
+        color: #525252;
+        
+        
+    }
+    p {
+        font-size: 12px;
+        color: #525252;
+        margin: 10px 0;
+       float: left;
+       
+    }
+    
+    img {
+        width: 30px;
+        height: 30px;
+        float:left;
+        margin: -5px;
+    } 
+   
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    div > p {
+       float: initial;
+       color:#a1a1a1;
+       
+    }
+    
+
+    button{
+        justify-content: center;
+        color: #828282;
+        img{
+            float:initial;
+            width: 20px;
+            height: 19px;
+        }
+    }
+    
+    label {
+        margin: 10px 0 5px;
+    }
+    
+    input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        
+    }   
+       
+    div>p{
+        align-items: center;
+        color: #828282;
+    }  
+.to-create-account{
+    color: #7f265b;
+}
+}
+.google-login {
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px; 
+}
+.Remember-me {
+    font-size: small;
+    
+    input{
+        size: 10px;
+    }
+a{
+    position: absolute;
+    bottom: 310px;
+    right: 227px;
+    text-align: right;
+    font-size: x-small;
+    color:  #7f265b;
+    
+}
+}
+.login-button {
+    background: #7F265B;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0;
+}
+
+}
+
+
+
+
+
+
