@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCULATOR</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: blanchedalmond;
+            color: #000000;
+        }
+        #calculator{
+            margin: auto;
+            max-width: 300px;
+            border: 2px solid black;
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 15px;
+            border: none;
+            background-color: black;
+            color: white;
+        }
+        button{
+            width: 100%;
+            background-color: blue;
+            color: black;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s easa;
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <br>
+        <button onclick="todisplay('1')">1</button>
+        <button onclick="todisplay('2')">2</button>
+        <button onclick="todisplay('3')">3</button>
+        <button onclick="todisplay('+')">+</button>
+        <br>
+        <button onclick="todisplay('4')">4</button>
+        <button onclick="todisplay('5')">5</button>
+        <button onclick="todisplay('6')">6</button>
+        <button onclick="todisplay('-')">-</button>
+        <br>
+        <button onclick="todisplay('7')">7</button>
+        <button onclick="todisplay('8')">8</button>
+        <button onclick="todisplay('9')">9</button>
+        <button onclick="todisplay('*')">*</button>
+        <br>
+        <button onclick="todisplay('0')">0</button>
+        <button id="clear" onclick="clearDispaly()">AC</button>
+        <button id="equals" onclick="calculateresult()">=</button>
+        <button onclick="todisplay('/')">/</button>
+    </div>
+<script>
+    function todisplay(value){
+        document.getElementById('display').value+=value;
+    }
+    function clearDispaly(){
+        document.getElementById('display').value='';
+    }
+    function calculateresult(){
+        var expression = document.getElementById('display').value;
+        var result;
+        try{
+            result=eval(expression);
+            document.getElementById('display').value=result;
+        }
+        catch(error){
+            document.getElementById('display').value='error';
+        }
+
+    }
+</script>
+
+</body>
+</html>
